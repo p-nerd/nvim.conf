@@ -4,6 +4,7 @@ local capabilities = base.capabilities
 
 local lspconfig = require("lspconfig")
 
+-- C/C++
 lspconfig.clangd.setup {
   on_attach = function(client, bufnr)
     client.server_capabilities.signatureHelpProvider = false
@@ -11,3 +12,15 @@ lspconfig.clangd.setup {
   end,
   capabilities = capabilities,
 }
+
+-- TypeScript
+lspconfig.tsserver.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    preferences = {
+      disableSuggestions = true,
+    }
+  },
+}
+

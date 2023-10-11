@@ -53,9 +53,13 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        -- C/C++
         "clangd",
         "clang-format",
         "codelldb",
+        -- TypeScript
+        "typescript-language-server",
+        "eslint-lsp",
       }
     }
   }

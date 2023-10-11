@@ -1,5 +1,13 @@
 local plugins = {
     {
+    "NvChad/nvim-colorizer.lua",
+        opts = {
+            user_default_options = {
+                tailwind = true,
+            },
+        },
+    },
+    {
         "rcarriga/nvim-dap-ui",
         event = "VeryLazy",
         dependencies = "mfussenegger/nvim-dap",

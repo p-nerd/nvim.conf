@@ -32,6 +32,7 @@ local plugins = {
     {
         "mfussenegger/nvim-dap",
         config = function(_, _)
+            require "custom.configs.dap"
             require("core.utils").load_mappings("dap")
         end
     },
@@ -60,7 +61,8 @@ local plugins = {
                 -- TypeScript
                 "typescript-language-server",
                 "eslint-lsp",
-                "prettier"
+                "prettier",
+                "js-debug-adapter"
             }
         }
     }

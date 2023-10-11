@@ -64,7 +64,9 @@ local plugins = {
                 "prettier",
                 "js-debug-adapter",
                 -- PHP
-                "intelephense"
+                "intelephense",
+                "phpcs",
+                "phpcbf",
             }
         }
     }

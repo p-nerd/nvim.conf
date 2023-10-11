@@ -67,6 +67,8 @@ local plugins = {
                 "intelephense",
                 "phpcs",
                 "phpcbf",
+                -- TailwindCSS
+                "tailwindcss-language-server"
             }
         }
     }

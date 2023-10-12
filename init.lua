@@ -6,4 +6,5 @@ vim.o.shiftwidth = 4   -- Number of spaces inserted when indenting
 -- Disable linting for missing doc comments in PHP
 -- vim.g.syntastic_php_phpcs_args = "--standard=Squiz --sniffs=PHPDocFormatting --ignore=PHPCompatibility.PHP.NewFunctions.PHP80.ltrim_whitespace PHPCompatibility.PHP.NewFunctions.PHP80.ltrim_whitespace PHPCompatibility.PHP.NewFunctions.PHP80.ltrim_whitespace"
 
+vim.o.relativenumber = true;
 

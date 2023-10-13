@@ -8,3 +8,6 @@ vim.o.shiftwidth = 4   -- Number of spaces inserted when indenting
 
 vim.o.relativenumber = true;
 
+-- Map jk to exit Insert mode and return to Normal mode in Insert mode
+vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true, silent = true })
+

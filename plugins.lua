@@ -38,12 +38,20 @@ local plugins = {
         end,
     },
     {
-        "NvChad/nvim-colorizer.lua",
-        opts = {
-            user_default_options = {
-                tailwind = true,
-            },
-        },
+        "mfussenegger/nvim-dap",
+        config = function(_, _)
+            require "custom.configs.dap"
+            require("core.utils").load_mappings("dap")
+        end
+    },
+    {
+        "dreamsofcode-io/nvim-dap-go",
+        ft = "go",
+        dependencies = "mfussenegger/nvim-dap",
+        config = function(_, opts)
+            require("dap-go").setup(opts)
+            require("core.utils").load_mappings("dap_go")
+        end
     },
     {
         "rcarriga/nvim-dap-ui",
@@ -76,11 +84,12 @@ local plugins = {
         },
     },
     {
-        "mfussenegger/nvim-dap",
-        config = function(_, _)
-            require "custom.configs.dap"
-            require("core.utils").load_mappings("dap")
-        end
+        "NvChad/nvim-colorizer.lua",
+        opts = {
+            user_default_options = {
+                tailwind = true,
+            },
+        },
     },
 }
 return plugins

@@ -1,5 +1,36 @@
 local plugins = {
     {
+        "williamboman/mason.nvim",
+        opts = {
+            ensure_installed = {
+                -- C/C++
+                "clangd",
+                "clang-format",
+                "codelldb",
+                -- TypeScript
+                "typescript-language-server",
+                "eslint-lsp",
+                "prettier",
+                "js-debug-adapter",
+                -- PHP
+                "intelephense",
+                "phpcs",
+                "phpcbf",
+                -- TailwindCSS
+                "tailwindcss-language-server",
+                -- Go
+                "gopls",
+            }
+        }
+    },
+    {
+        "neovim/nvim-lspconfig",
+        config = function()
+            require "plugins.configs.lspconfig"
+            require "custom.configs.lspconfig"
+        end,
+    },
+    {
     "NvChad/nvim-colorizer.lua",
         opts = {
             user_default_options = {
@@ -51,34 +82,5 @@ local plugins = {
             return require "custom.configs.null-ls"
         end,
     },
-    {
-        "neovim/nvim-lspconfig",
-        config = function()
-            require "plugins.configs.lspconfig"
-            require "custom.configs.lspconfig"
-        end,
-    },
-    {
-        "williamboman/mason.nvim",
-        opts = {
-            ensure_installed = {
-                -- C/C++
-                "clangd",
-                "clang-format",
-                "codelldb",
-                -- TypeScript
-                "typescript-language-server",
-                "eslint-lsp",
-                "prettier",
-                "js-debug-adapter",
-                -- PHP
-                "intelephense",
-                "phpcs",
-                "phpcbf",
-                -- TailwindCSS
-                "tailwindcss-language-server"
-            }
-        }
-    }
 }
 return plugins

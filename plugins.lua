@@ -31,7 +31,14 @@ local plugins = {
         end,
     },
     {
-    "NvChad/nvim-colorizer.lua",
+        "jose-elias-alvarez/null-ls.nvim",
+        event = "VeryLazy",
+        opts = function()
+            return require "custom.configs.null-ls"
+        end,
+    },
+    {
+        "NvChad/nvim-colorizer.lua",
         opts = {
             user_default_options = {
                 tailwind = true,
@@ -74,13 +81,6 @@ local plugins = {
             require "custom.configs.dap"
             require("core.utils").load_mappings("dap")
         end
-    },
-    {
-        "jose-elias-alvarez/null-ls.nvim",
-        event = "VeryLazy",
-        opts = function()
-            return require "custom.configs.null-ls"
-        end,
     },
 }
 return plugins

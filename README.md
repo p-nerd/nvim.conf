@@ -4,13 +4,13 @@ Custom neovim configuration with NvChad
 
 ## almost perfect neovim setup done
 
-- [x] C/C++
-- [x] JavaScript/Typescript
-- [x] PHP
-- [x] TailwindCSS
-- [x] Go
+-   [x] C/C++
+-   [x] JavaScript/Typescript
+-   [x] PHP
+-   [x] TailwindCSS
+-   [x] Go
 
-# Cheetsheet
+# Cheatsheet
 
 ## NvChad
 
@@ -36,20 +36,15 @@ Custom neovim configuration with NvChad
 -   `SPACE + h` -> For opening terminal
 -   `SPACE + f + m` -> For formatting the code
 
-## Search
-
--  `SPACE + f + w` -> Searching string in the project
--  `SPACE + f + f` -> Searching all files in the project
-
 ## Mason
 
-- `:MasonInstallAll` -> For installing dependencies
+-   `:MasonInstallAll` -> For installing dependencies
 
 ## Treesitter
 
-- `:TSInstall <language_to_install>` -> For installing syntax highlighting
+-   `:TSInstall <language_to_install>` -> For installing syntax highlighting
 
 ## C++
 
-- `SPACE + d + b` -> For giving breakpoint to current line
-- `SPACE + d + r` -> For running debugger
+-   `SPACE + d + b` -> For giving breakpoint to current line
+-   `SPACE + d + r` -> For running debugger

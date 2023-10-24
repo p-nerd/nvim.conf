@@ -36,6 +36,11 @@ Custom neovim configuration with NvChad
 -   `SPACE + h` -> For opening terminal
 -   `SPACE + f + m` -> For formatting the code
 
+## Search
+
+-  `SPACE + f + w` -> Searching string in the project
+-  `SPACE + f + f` -> Searching all files in the project
+
 ## Mason
 
 - `:MasonInstallAll` -> For installing dependencies

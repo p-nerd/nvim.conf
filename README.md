@@ -10,6 +10,7 @@ Custom neovim configuration with NvChad
 -   [x] TailwindCSS
 -   [x] Go
 -   [ ] Markdown
+-   [ ] Spell checker
 
 # Cheatsheet
 

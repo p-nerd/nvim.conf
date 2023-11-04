@@ -6,7 +6,7 @@ local opts = {
         -- C/C++
         null_ls.builtins.formatting.clang_format,
         -- TypeScript
-        null_ls.builtins.diagnostics.eslint,
+        null_ls.builtins.diagnostics.eslint_d,
         null_ls.builtins.formatting.prettier,
         -- PHP
         null_ls.builtins.diagnostics.phpcs.with({ -- Change how the php linting will work

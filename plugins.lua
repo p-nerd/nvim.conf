@@ -13,6 +13,7 @@ local plugins = {
                 "prettier",
                 "js-debug-adapter",
                 "eslint_d",
+                "emmet-ls",
                 -- PHP
                 "intelephense",
                 "phpcs",

@@ -12,6 +12,7 @@ Custom neovim configuration with NvChad
 -   [ ] Markdown
 -   [ ] Spell checker
 -   [ ] Docker
+-   [ ] Emmit
 
 # Cheatsheet
 

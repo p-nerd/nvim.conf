@@ -22,6 +22,8 @@ local plugins = {
                 "tailwindcss-language-server",
                 -- Go
                 "gopls",
+                -- Lua
+                "lua-language-server"
             }
         }
     },

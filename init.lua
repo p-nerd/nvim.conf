@@ -11,3 +11,7 @@ vim.o.relativenumber = true;
 -- Map jk to exit Insert mode and return to Normal mode in Insert mode
 vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true, silent = true })
 
+vim.opt.spelllang = "en_us";
+vim.opt.spell = true;
+vim.opt.spellfile = "/Users/shihab/.config/nvim/lua/custom/spell/en.utf-8.add"
+

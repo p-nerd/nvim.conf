@@ -15,3 +15,5 @@ vim.opt.spelllang = "en_us";
 vim.opt.spell = true;
 vim.opt.spellfile = "/Users/shihab/.config/nvim/lua/custom/spell/en.utf-8.add"
 
+vim.api.nvim_set_keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })

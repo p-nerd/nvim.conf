@@ -15,6 +15,10 @@ Custom neovim configuration with NvChad
 
 # Cheat sheet
 
+## Search & Replace
+
+- `%s/<search text>/<will replaced text>` -> for global search and replace on buffered file
+
 ## Spell
 
 - `z + =` -> for correct answer suggestion

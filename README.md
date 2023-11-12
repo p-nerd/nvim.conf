@@ -1,4 +1,4 @@
-# nvim_config
+# nvim.conf
 
 Custom neovim configuration with NvChad
 

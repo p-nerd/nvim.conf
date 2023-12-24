@@ -12,7 +12,7 @@ local plugins = {
                 "eslint-lsp",
                 "prettier",
                 "js-debug-adapter",
-                "emmet-ls",
+                -- "emmet-ls",
                 -- PHP
                 "intelephense",
                 "phpcs",
@@ -105,7 +105,6 @@ local plugins = {
         build = function()
             vim.cmd [[silent! GoInstallDeps]]
         end,
-    }
-
+    },
 }
 return plugins

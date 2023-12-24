@@ -1,5 +1,12 @@
 local plugins = {
     {
+        "neovim/nvim-lspconfig",
+        config = function()
+            require "plugins.configs.lspconfig"
+            require "custom.configs.lspconfig"
+        end,
+    },
+    {
         "williamboman/mason.nvim",
         opts = {
             ensure_installed = {
@@ -7,18 +14,17 @@ local plugins = {
                 "clangd",
                 "clang-format",
                 "codelldb",
-                -- TypeScript
+                -- JavaScript/TypeScript
                 "typescript-language-server",
+                "tailwindcss-language-server",
                 "eslint-lsp",
-                "prettier",
+                "prettierd",
                 "js-debug-adapter",
                 -- "emmet-ls",
                 -- PHP
                 "intelephense",
                 "phpcs",
                 "phpcbf",
-                -- TailwindCSS
-                "tailwindcss-language-server",
                 -- Go
                 "gopls",
                 -- Lua
@@ -27,18 +33,42 @@ local plugins = {
         }
     },
     {
-        "neovim/nvim-lspconfig",
-        config = function()
-            require "plugins.configs.lspconfig"
-            require "custom.configs.lspconfig"
-        end,
-    },
-    {
-        "jose-elias-alvarez/null-ls.nvim",
+        "nvimtools/none-ls.nvim",
         event = "VeryLazy",
         opts = function()
             return require "custom.configs.null-ls"
         end,
+    },
+    {
+        "windwp/nvim-ts-autotag",
+        ft = {
+            "html",
+            "astro",
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact",
+        },
+        config = function()
+            require("nvim-ts-autotag").setup()
+        end,
+    },
+    {
+        "nvim-treesitter/nvim-treesitter",
+        opts = function()
+            local opts = require "plugins.configs.treesitter"
+            opts.ensure_installed = {
+                "lua",
+                "javascript",
+                "typescript",
+                "tsx",
+                "go",
+                "astro",
+                "md",
+                "css"
+            }
+            return opts
+        end
     },
     {
         "mfussenegger/nvim-dap",

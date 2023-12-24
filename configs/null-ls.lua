@@ -1,13 +1,13 @@
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 local null_ls = require("null-ls")
+
+local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local opts = {
     sources = {
         -- C/C++
         null_ls.builtins.formatting.clang_format,
-        -- TypeScript
-        null_ls.builtins.diagnostics.eslint,
-        null_ls.builtins.formatting.prettier,
+        -- JavaScript/TypeScript
+        null_ls.builtins.formatting.prettierd,
         -- PHP
         null_ls.builtins.diagnostics.phpcs.with({ -- Change how the php linting will work
             prefer_local = "vendor/bin",

@@ -1,4 +1,4 @@
-# nvim_config
+# nvim.conf
 
 Custom neovim configuration with NvChad
 
@@ -14,6 +14,10 @@ Custom neovim configuration with NvChad
 - [ ] Docker
 
 # Cheat sheet
+
+## Search & Replace
+
+- `%s/<search text>/<will replaced text>` -> for global search and replace on buffered file
 
 ## Spell
 

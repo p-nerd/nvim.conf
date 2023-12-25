@@ -5,20 +5,20 @@ local capabilities = base.capabilities
 local lspconfig = require("lspconfig")
 local util = require "lspconfig/util"
 
-
 local servers = {
     -- JavaScript/TypeScript
     "tsserver",
     "tailwindcss",
     "eslint",
-    "cssls"
+    "cssls",
+    "astro",
 }
 
 for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-  }
+    lspconfig[lsp].setup {
+        on_attach = on_attach,
+        capabilities = capabilities,
+    }
 end
 
 -- C/C++
@@ -29,21 +29,6 @@ lspconfig.clangd.setup {
     end,
     capabilities = capabilities,
 }
-
--- TypeScript
--- lspconfig.emmet_ls.setup({
---     on_attach = on_attach,
---     capabilities = capabilities,
---     filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "svelte", "pug", "typescriptreact", "vue" },
---     init_options = {
---       html = {
---         options = {
---           -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
---           ["bem.enabled"] = true,
---         },
---       },
---     }
--- })
 
 -- PHP
 lspconfig.intelephense.setup {

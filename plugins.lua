@@ -20,7 +20,7 @@ local plugins = {
                 "eslint-lsp",
                 "prettierd",
                 "astro-language-server",
-                "cssls",
+                "css-lsp",
                 -- PHP
                 "intelephense",
                 "phpcs",

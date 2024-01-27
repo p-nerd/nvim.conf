@@ -28,7 +28,9 @@ local plugins = {
                 -- Go
                 "gopls",
                 -- Lua
-                "lua-language-server"
+                "lua-language-server",
+                -- Elixir
+                "elixir-ls"
             }
         }
     },
@@ -64,7 +66,8 @@ local plugins = {
                 "tsx",
                 "go",
                 "astro",
-                "css"
+                "css",
+                "elixir"
             }
             return opts
         end

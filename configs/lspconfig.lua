@@ -12,6 +12,8 @@ local servers = {
     "eslint",
     "cssls",
     "astro",
+    -- Elixir
+    "elixirls"
 }
 
 for _, lsp in ipairs(servers) do

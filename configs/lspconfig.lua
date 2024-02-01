@@ -1,3 +1,6 @@
+require("mason").setup()
+require("mason-lspconfig").setup()
+
 local base = require("plugins.configs.lspconfig")
 local on_attach = base.on_attach
 local capabilities = base.capabilities
@@ -13,7 +16,7 @@ local servers = {
     "cssls",
     "astro",
     -- Elixir
-    "elixirls"
+    -- "elixirls"
 }
 
 for _, lsp in ipairs(servers) do

@@ -71,7 +71,8 @@ local plugins = {
                 "go",
                 "astro",
                 "css",
-                "elixir"
+                "elixir",
+                "prisma"
             }
             return opts
         end

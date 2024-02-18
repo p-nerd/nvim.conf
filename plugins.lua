@@ -34,7 +34,9 @@ local plugins = {
                 -- Lua
                 "lua-language-server",
                 -- Elixir
-                "elixir-ls"
+                "elixir-ls",
+                -- Ruby
+                "ruby-lsp"
             }
         }
     },
@@ -71,8 +73,7 @@ local plugins = {
                 "go",
                 "astro",
                 "css",
-                "elixir",
-                "prisma"
+                "elixir"
             }
             return opts
         end

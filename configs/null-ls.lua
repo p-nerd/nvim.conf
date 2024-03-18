@@ -8,14 +8,14 @@ local opts = {
         null_ls.builtins.formatting.clang_format,
         -- JavaScript/TypeScript
         null_ls.builtins.formatting.prettierd,
-        -- PHP
+        -- -- PHP
         null_ls.builtins.diagnostics.phpcs.with({ -- Change how the php linting will work
             prefer_local = "vendor/bin",
             extra_args = { "--standard=Laravel" }
         }),
-        null_ls.builtins.formatting.phpcbf.with({ -- Use the local installation first
+        null_ls.builtins.formatting.pint.with({ -- Change how the php linting will work
             prefer_local = "vendor/bin",
-            -- extra_args = { "--standard=Laravel" }
+            extra_args = { "--standard=Laravel" }
         }),
         -- Go
         null_ls.builtins.formatting.gofmt,

@@ -28,7 +28,6 @@ local plugins = {
                 -- PHP
                 "intelephense",
                 "phpcs",
-                "phpcbf",
                 -- Go
                 "gopls",
                 -- Lua

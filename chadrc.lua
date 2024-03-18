@@ -1,6 +1,6 @@
 ---@type ChadrcConfig
 local M = {}
-M.ui = { theme = 'gatekeeper', transparency = true }
+M.ui = { theme = 'gatekeeper', transparency = false }
 M.plugins = "custom.plugins"
 M.mappings = require("custom.mappings")
 
